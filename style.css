@@ -1,0 +1,23 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    background-image: url('your-image-url.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.highlights h3 {
+    font-weight: bold;
+}
+
+.highlights p {
+    color: #6c757d;
+}
+
+footer {
+    background-color: #f8f9fa;
+}
