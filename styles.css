@@ -1,22 +1,21 @@
 body {
-    font-family: 'Roboto', Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
 }
 
 .navbar {
-    padding: 1rem 1.5rem;
+  padding: 1rem 1.5rem;
 }
 
 .nav-link {
-    transition: color 0.3s;
+  transition: color 0.3s;
 }
 
 .nav-link:hover {
-    color: #00aaff; /* Change to your desired hover color */
+  color: #00aaff; /* Change to your desired hover color */
 }
 
-
 .navbar.scrolled {
-    top: 0; /* Keep fixed at the top */
+  top: 0; /* Keep fixed at the top */
 }
 
 .about-section,
@@ -24,103 +23,181 @@ body {
 .schedule-section,
 .contact-section,
 .speakers-section {
-    margin: 20px;
+  margin: 20px;
 }
 
 .workshop-section {
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    padding: 40px 0;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 40px 0;
 }
 .workshop-section h2 {
-    font-weight: bold;
-    color: #333;
+  font-weight: bold;
+  color: #333;
 }
 .card {
-    border: none;
-    transition: transform 0.2s;
+  border: none;
+  transition: transform 0.2s;
 }
 .card:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 .card-title {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
 }
 .card-text {
-    font-size: 0.9rem;
-    color: #666;
+  font-size: 0.9rem;
+  color: #666;
 }
 
-.carousel{
-    margin-top: -60px;
+.carousel {
+  margin-top: -60px;
 }
-
 
 .hero {
-    background-size: cover;
-    background-position: center;
-    color: #fff;
-    height: 120vh;
-    margin-top: 56px; /* Adjust based on navbar height */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  height: 120vh;
+  margin-top: 56px; /* Adjust based on navbar height */
 }
 
 .highlight-box {
-    background-color: #f8f9fa;
-    border-radius: 8px;
-    padding: 20px;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    height: 100%;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
 }
 
 .highlight-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .highlight-box img {
-    max-width: 100px;
-    margin-bottom: 15px;
+  max-width: 100px;
+  margin-bottom: 15px;
 }
 
 .map-responsive {
-    overflow: hidden;
-    padding-bottom: 56.25%;
-    position: relative;
-    height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
 }
 
 .map-responsive iframe {
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-}
-
-.highlight-img {
-    cursor: pointer;
-    transition: transform 0.3s ease;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
 
 .highlight-img:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .modal-body {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 .modal-body img {
-    max-width: 50%;
-    height: auto;
-    margin-bottom: 15px;
+  max-width: 50%;
+  height: auto;
+  margin-bottom: 15px;
 }
-.map-section{
-    height: 100vh;
-    color: white;
-    background-color: rgb(6, 6, 67);
+.map-section {
+  height: 100vh;
+  color: white;
+  background-color: rgb(6, 6, 67);
 }
+
+.faq-section {
+  padding: 60px;
+}
+.card-header {
+  background-color: #ffffff; /* สีพื้นหลังของหัวข้อ */
+  border-bottom: 1px solid #eaeaea;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 8px 8px 0 0;
+}
+.card-header:hover {
+  background-color: #e9ecef; /* เปลี่ยนสีเมื่อเลื่อนเมาส์ */
+}
+.card-body {
+  background-color: #ffffff; /* สีพื้นหลังของเนื้อหา */
+  padding: 20px;
+  border-radius: 0 0 8px 8px;
+}
+
+.card-header h5 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.highlight-img {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  max-width: 100%; /* ให้รูปภาพมีขนาดเต็มที่ */
+  height: auto; /* คงอัตราส่วนของรูปภาพ */
+  border-radius: 10px; /* เพิ่มความโค้งให้กับมุมของรูปภาพ */
+}
+
+@media (max-width: 768px) {
+  .hero {
+    background-size: contain;
+    height: 100%; /* ปรับความสูงตามต้องการ */
+  }
+}
+@media (max-width: 1024px) {
+  .hero {
+    background-size: cover;
+    height: 50vh; /* ปรับความสูงตามต้องการ */
+  }
+  .map-section{
+    height: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+    .modal-body {
+        display: grid;
+        grid-template-columns: 1fr 2fr; /* สองคอลัมน์บนหน้าจอขนาดกลางขึ้นไป */
+    }
+}
+@media (max-width: 820px) {
+    .modal-body {
+        display: grid;
+        grid-template-columns: 1fr 2fr; /* สองคอลัมน์บนหน้าจอขนาดกลางขึ้นไป */
+    }
+}
+@media (max-width: 1024px) {
+    .modal-body {
+        display: grid;
+        grid-template-columns: 1fr 2fr; /* สองคอลัมน์บนหน้าจอขนาดกลางขึ้นไป */
+    }
+}
+
+.modal-body {
+    grid-template-columns: 1fr; /* ให้เป็น 1 คอลัมน์ในมือถือ */
+}
+
+.modal-body img {
+    width: 100%; /* ให้ภาพเต็มพื้นที่ */
+    height: auto; /* รักษาสัดส่วนของภาพ */
+    border-radius: 10px; /* ปรับให้มุมของภาพโค้ง */
+    justify-self: center; /* จัดกลางภาพ */
+}
+
+.modal-body p {
+    margin-top: 15px; /* เพิ่มระยะห่างระหว่างภาพและข้อความ */
+}
+

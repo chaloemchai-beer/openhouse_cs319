@@ -7,6 +7,7 @@
     <title>IT Department Open House</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="animation.css">
     <link rel="icon" href="https://www.bu.ac.th/dist/images/bu_icon_logo.svg?id=1f26bb9dd84ae768d3955b81b72fb1d9">
 </head>
 
@@ -14,7 +15,8 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="https://www.bu.ac.th/dist/images/bu_icon_logo.svg?id=1f26bb9dd84ae768d3955b81b72fb1d9" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                <img src="https://www.bu.ac.th/dist/images/bu_icon_logo.svg?id=1f26bb9dd84ae768d3955b81b72fb1d9"
+                    alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
                 IT Open House
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -33,13 +35,13 @@
             </div>
         </div>
     </nav>
-    
+
 
     <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <div class="hero d-flex align-items-center justify-content-center"
-                    style="background-image: url('https://openhouse.bu.ac.th/contents/banner/banner_2.jpg');">
+                    style="background-image: url('https://openhouse.bu.ac.th/contents/banner/banner_2.jpg')">
                     <div class="text-center text-white p-4"
                         style="background-color: rgba(0, 0, 0, 0.6); border-radius: 10px;">
                         <h1>Welcome to the IT Department Open House</h1>
@@ -77,44 +79,39 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="row">
-                            <div class="col-4 d-none d-md-block">
+                            <div class="col-4">
                                 <img src="https://openhouse.bu.ac.th/contents/highlights/5.jpg?1"
                                     class="img-fluid highlight-img" alt="Tech Workshops" data-bs-toggle="modal"
                                     data-bs-target="#techWorkshopsModal">
                             </div>
-                            <div class="col-4 d-none d-md-block">
+                            <div class="col-4">
                                 <img src="https://openhouse.bu.ac.th/contents/highlights/4.jpg?1"
                                     class="img-fluid highlight-img" alt="Expert Speakers" data-bs-toggle="modal"
                                     data-bs-target="#expertSpeakersModal">
                             </div>
-                            <div class="col-4 d-none d-md-block">
+                            <div class="col-4">
                                 <img src="https://openhouse.bu.ac.th/contents/highlights/6.jpg?1"
                                     class="img-fluid highlight-img" alt="Networking Opportunities"
                                     data-bs-toggle="modal" data-bs-target="#networkingModal">
-                            </div>
-                            <div class="col-12 d-md-none mb-3">
-                                <img src="https://openhouse.bu.ac.th/contents/highlights/5.jpg?1"
-                                    class="img-fluid highlight-img" alt="Tech Workshops" data-bs-toggle="modal"
-                                    data-bs-target="#techWorkshopsModal">
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="row">
-                            <div class="col-4 d-none d-md-block">
+                            <div class="col-4">
                                 <img src="https://openhouse.bu.ac.th/contents/highlights/2.jpg?1"
                                     class="img-fluid highlight-img" alt="Tech Innovations" data-bs-toggle="modal"
                                     data-bs-target="#techInnovationsModal">
                             </div>
-                            <div class="col-4 d-none d-md-block">
+                            <div class="col-4">
                                 <img src="https://openhouse.bu.ac.th/contents/highlights/3.jpg?1"
                                     class="img-fluid highlight-img" alt="Collaborative Projects" data-bs-toggle="modal"
                                     data-bs-target="#collaborativeProjectsModal">
                             </div>
-                            <div class="col-12 d-md-none mb-3">
-                                <img src="https://openhouse.bu.ac.th/contents/highlights/2.jpg?1"
-                                    class="img-fluid highlight-img" alt="Tech Innovations" data-bs-toggle="modal"
-                                    data-bs-target="#techInnovationsModal">
+                            <div class="col-4">
+                                <img src="https://openhouse.bu.ac.th/contents/highlights/1.jpg?2"
+                                    class="img-fluid highlight-img" alt="Pro Center" data-bs-toggle="modal"
+                                    data-bs-target="#procenter">
                             </div>
                         </div>
                     </div>
@@ -132,7 +129,6 @@
             </div>
         </div>
     </section>
-    
 
     <!-- Modals สำหรับแต่ละ highlight -->
     <div class="modal fade" id="techWorkshopsModal" tabindex="-1" aria-labelledby="techWorkshopsModalLabel"
@@ -140,14 +136,14 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="techWorkshopsModalLabel">Tech Workshops</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <img src="https://openhouse.bu.ac.th/contents/highlights/5.jpg?1" class="img-fluid"
                         alt="Tech Workshops">
-                    <p>Explore hands-on workshops in AI, Web Development, and more. Our tech workshops offer practical
-                        experience with cutting-edge technologies, guided by industry professionals.</p>
+                    <p style="display: grid; height: 50%;"><strong style="font-size: 30px;">FANCY NIGHT</strong>
+                        <Strong strong style="font-size: 20px;">ลองสนุกให้สุด</Strong>
+                        หลังจากลองเล่นกับทุกกิจกรรมแล้ว มาปิดท้ายวันด้วยคอนเสิร์ตให้มันส์สุดเหวี่ยง กับศิลปินสุด Pro ชื่อดังที่รอให้ทุกคนมาสนุกให้สุดไปกับคอนเสิร์ตและโชว์พิเศษ ไม่ว่าจะ 4EVE, DICE, MXFRUIT, DIDIxDADA, FELLOW FELLOW, BAMM พร้อมเอ็นจอยกับอาหารหลากหลายที่จะมาช่วยเติมพลังก่อนกลับบ้าน</p>
                 </div>
             </div>
         </div>
@@ -158,15 +154,14 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="expertSpeakersModalLabel">Expert Speakers</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <img src="https://openhouse.bu.ac.th/contents/highlights/4.jpg?1" class="img-fluid"
                         alt="Expert Speakers">
-                    <p>Learn from industry experts sharing insights into emerging trends. Our lineup of speakers
-                        includes leaders in various tech fields, offering valuable perspectives on the future of
-                        technology.</p>
+                        <p style="display: grid; height: 50%;"><strong style="font-size: 30px;">FLAVORFUL FAIR</strong>
+                            <Strong strong style="font-size: 20px;">ลองชิมร้านมือโปร</Strong>
+                            มา BU OPEN HOUSE ปีนี้ไม่มีอด นอกจากจะได้ลองเล่นระดับโปรแล้ว เรายังมีร้านอาหารสุด Pro ที่มีชื่อเสียงทั่วประเทศ ทั้งคาวหวานมาให้ได้ลองชิมกันถึงที่ นอกจากนี้ยังโชว์ความ Pro ด้วยร้านอาหารชื่อดังที่เป็นผลงานศิษย์เก่ามหาวิทยาลัยกรุงเทพอีกด้วย เช่น ฉันจะกินชาเย็นทุกวัน</p>
                 </div>
             </div>
         </div>
@@ -177,14 +172,14 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="networkingModalLabel">Networking Opportunities</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <img src="https://openhouse.bu.ac.th/contents/highlights/6.jpg?1" class="rounded float-start"
                         alt="Networking Opportunities">
-                    <p>Meet professionals and peers in the tech community. Our networking sessions provide a platform to
-                        connect with industry leaders, potential employers, and fellow tech enthusiasts.</p>
+                        <p style="display: grid; height: 50%;"><strong style="font-size: 30px;">PRO-CERTIFICATE</strong>
+                            <Strong strong style="font-size: 20px;">ลองล่าใบเซอร์ใส่พอร์ต</Strong>
+                            ไฮไลต์สําคัญอีกอย่างหนึ่งในปีนี้นอกจากการลองเล่นอย่างสมจริงแล้ว อีกหนึ่งของสําคัญที่จะได้กลับไปคือ ‘E-Certificate’ ช่วยการันตีความโปรที่คุณได้ลองมากมาย ด้วยการสแกน Qr Code ที่จุดร่วมกิจกรรม เพื่อรับใบเซอร์กลับไปสะสมลงพอร์ตอัปสกิลกันอย่างปัง ๆ ได้เลย</p>
                 </div>
             </div>
         </div>
@@ -195,14 +190,14 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="techInnovationsModalLabel">Tech Innovations</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <img src="https://openhouse.bu.ac.th/contents/highlights/2.jpg?1" class="img-fluid"
                         alt="Tech Innovations">
-                    <p>Discover the latest trends and innovations in technology. Our tech innovation showcase features
-                        cutting-edge projects and products from both established companies and promising startups.</p>
+                        <p style="display: grid; height: 50%;"><strong style="font-size: 30px;">CLUSTER CENTER</strong>
+                            <Strong strong style="font-size: 20px;">ลองหาแพชชัน</Strong>
+                            มาลองหาคณะที่ใช่ สาขาและกิจกรรมที่อยากลองได้ที่จุดนี้ Cluster Center จุดรวมพลของคนมี DNA เดียวกัน ไม่ว่าจะ Business Creative Innovative และ BU International ด้วย Character ที่ออกแบบมาโดยเฉพาะ ช่วยบอกตำแหน่งของแต่ละคลัสเตอร์กระจายตามที่ต่าง ๆ เป็นจุดให้ข้อมูลรายชื่อคณะ พร้อมตารางกิจกรรมในคลัสเตอร์นั้น ๆ</p>
                 </div>
             </div>
         </div>
@@ -213,14 +208,32 @@
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="collaborativeProjectsModalLabel">Collaborative Projects</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <img src="https://openhouse.bu.ac.th/contents/highlights/3.jpg?1" class="img-fluid"
                         alt="Collaborative Projects">
-                    <p>Participate in collaborative projects and tech challenges. Our collaborative sessions encourage
-                        teamwork and problem-solving, allowing you to apply your skills to real-world scenarios.</p>
+                        <p style="display: grid; height: 50%;"><strong style="font-size: 30px;">PRO-ACTIVITIES</strong>
+                            <Strong strong style="font-size: 20px;">ลองฝึกทําจริง</Strong>
+                            พื้นที่ของการลองเล่นเพื่อหาความโปรให้กับแพชชันที่ชอบ ด้วยกิจกรรมมากมายหลากหลายเต็มไปหมดจากคณะสาขาต่าง ๆ เปิดโอกาสให้ทุกคนที่มาเข้าร่วมได้ลองคิดจริง ลองจับอุปกรณ์จริง ลองลงมือทําจริง ได้ความรู้จากอาจารย์ตัวจริงในสาขา และเปิดโลกไปกับ Pro-Partner ของ BU ที่เชี่ยวชาญของจริง และมีรุ่นพี่คอยพูดคุย ดูแล แชร์ประสบการณ์ชีวิตมหาลัยของจริงให้ทุกคนสนุกไปด้วยกัน เป็นการลองเล่นให้เป็นโปร สัมผัสประสบการณ์ของจริงที่ไม่เคยลองได้ที่ไหนนอกจากที่ BU OPEN HOUSE นี้</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="procenter" tabindex="-1"
+        aria-labelledby="procenterLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://openhouse.bu.ac.th/contents/highlights/1.jpg?2" class="img-fluid"
+                        alt="Collaborative Projects">
+                        <p style="display: grid; height: 50%;"><strong style="font-size: 30px;">PRO-CENTER</strong>
+                            <Strong strong style="font-size: 20px;">ลองรู้จักตัวเอง</Strong>
+                            จุดเริ่มต้นเส้นทางการลองที่ทุกคนจะได้เจอบริเวณอาคาร A3 เป็นจุดลงทะเบียนกลาง พร้อมให้ข้อมูลเกี่ยวกับคณะและสาขาต่าง ๆ มีรุ่นพี่แนะนำกิจกรรมไฮไลต์น่าสนใจ และตารางเวลาทั้งหมด อีกทั้งยังมีของเด็ดรอให้ไปลองเล่นคือ ‘FIND YOUR PRO-PASSION QUIZ’ ที่จะพาทุกคนรู้จักความชอบของตัวเองมากขึ้น คลัสเตอร์ไหน คณะไหนที่เหมาะกับคุณ และเป็นตัวช่วยปักหมุดเส้นทางให้ได้ไปลองเล่นที่คณะต่าง ๆ ได้ง่ายกว่าเดิม นอกจากนี้ยังมี PRO-STAGE เป็นกิจกรรมกลางไว้ให้ทุกคนได้มาเอ็นจอยกันอีกด้วย</p>
                 </div>
             </div>
         </div>
@@ -231,18 +244,18 @@
             <h2 class="text-center mb-4">Our Location - Bangkok University</h2>
             <div class="row">
                 <div class="col-lg-6 mb-4">
-                    <h4>How to Get Here</h4>
-                    <p>Bangkok University is conveniently located and accessible by multiple modes of transportation:
-                    </p>
+                    <h4>การเดินทาง</h4>
                     <ul>
-                        <li><strong>By Car:</strong> Easily accessible via the main expressways. Parking is available on
-                            campus.</li>
-                        <li><strong>By BTS Skytrain:</strong> Get off at Ekkamai station, and take a taxi to the campus
-                            (approximately 10 minutes).</li>
-                        <li><strong>By Bus:</strong> Several bus routes pass near the university. Bus numbers include
-                            25, 72, and 149.</li>
-                        <li><strong>By Taxi:</strong> Taxi services are readily available and can bring you directly to
-                            the campus.</li>
+                        <li><strong>รถเมล์</strong> สาย 39 ปอ.510 / ปอ.520</li>
+                        <li><strong>รถตู้ สาย ต.85-93 (ฝั่งเกาะพญาไท)</strong>อนุสาวรีย์ชัยสมรภูมิ-มธ. (ศูนย์รังสิต) - ใกล้ BTS อนุสาวรีย์ชัยสมรภูมิ
+                            สาย ต.118-1 หมอชิต-มธ. (ศูนย์รังสิต)
+                            สาย 1008 (อยู่ตรงข้างฟิวเจอร์พาร์ค รังสิต)
+                            ช่วงรังสิต-มธ. (ศูนย์รังสิต)</li>
+                        <li><strong>รถไฟฟ้าสายสีเขียว (BTS) </strong> ลงสถานีหมอชิต (ทางออก 3,4) ต่อรถตู้สาย ต. 118-1
+                            ลงสถานีอนุสาวรีย์ชัยสมรภูมิ (ทางออก 3,4) ต่อรถตู้สาย ต.85-93 (ฝั่งเกาะพญาไท)
+                            ลงสถานีแยกคปอ. (ทางออก 1,3) ต่อรถเมล์ สาย 39,520</li>
+                        <li><strong>รถไฟฟ้าสายสีน้ำเงิน (MRT)</strong> ลงสถานีจตุจักร (ทางออก 3,4) ต่อรถตู้สาย ต.118-1 หมอชิต-มธ. (ศูนย์รังสิต)</li>
+                        <li><strong>รถไฟฟ้าสายสีแดง (SRT)</strong> ลงสถานี รังสิต ทางออกที่ 3 ต่อรถสองแถวสาย รังสิต-จารุศร</li>
                     </ul>
                 </div>
                 <div class="col-lg-6">
