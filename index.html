@@ -1,162 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT Department Ope<!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>IT Department Open House</title>
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-            <!-- Bootstrap Icons -->
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-            <link rel="stylesheet" href="styles.css">
-        </head>
-        <body>
-        
-           <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <title>IT Department Open House</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://www.bu.ac.th/dist/images/bu_icon_logo.svg?id=1f26bb9dd84ae768d3955b81b72fb1d9">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#">IT Open House</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#">
+                <img src="https://www.bu.ac.th/dist/images/bu_icon_logo.svg?id=1f26bb9dd84ae768d3955b81b72fb1d9" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                IT Open House
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page"  href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="schedule.html">Schedule</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="faq.html">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="sponsors.html">Sponsors & Partners</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="speakers.html">Speakers & Partners</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-        
-            <!-- Hero Section -->
-            <section class="hero bg-primary text-white text-center py-5">
-                <div class="container">
-                    <h1>Welcome to the IT Department Open House</h1>
-                    <p class="lead">Join us for an immersive experience into the world of technology</p>
-                    <a href="registration.html" class="btn btn-lg btn-light mt-3">Register Now</a>
+    
+
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="hero d-flex align-items-center justify-content-center"
+                    style="background-image: url('https://openhouse.bu.ac.th/contents/banner/banner_2.jpg');">
+                    <div class="text-center text-white p-4"
+                        style="background-color: rgba(0, 0, 0, 0.6); border-radius: 10px;">
+                        <h1>Welcome to the IT Department Open House</h1>
+                        <p class="lead">Join us for an immersive experience into the world of technology</p>
+                        <a href="registration.html" class="btn btn-lg btn-primary mt-3">Register Now</a>
+                    </div>
                 </div>
-            </section>
-        
-            <!-- Highlights Section -->
-            <section class="highlights py-5">
-                <div class="container">
-                    <div class="row text-center">
-                        <div class="col-md-4">
-                            <i class="bi bi-laptop display-4 text-primary"></i>
-                            <h3 class="my-3">Tech Workshops</h3>
-                            <p>Explore hands-on workshops in AI, Web Development, and more.</p>
+            </div>
+            <div class="carousel-item">
+                <div class="hero d-flex align-items-center justify-content-center"
+                    style="background-image: url('https://openhouse.bu.ac.th/contents/banner/banner_3.jpg');">
+                    <div class="text-center text-white p-4"
+                        style="background-color: rgba(0, 0, 0, 0.6); border-radius: 10px;">
+                        <h1>Explore Exciting Tech Workshops</h1>
+                        <p class="lead">Hands-on learning from industry professionals</p>
+                        <a href="schedule.html" class="btn btn-lg btn-primary mt-3">See Schedule</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <section class="highlights py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Highlights</h2>
+            <div id="highlightsCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-4 d-none d-md-block">
+                                <img src="https://openhouse.bu.ac.th/contents/highlights/5.jpg?1"
+                                    class="img-fluid highlight-img" alt="Tech Workshops" data-bs-toggle="modal"
+                                    data-bs-target="#techWorkshopsModal">
+                            </div>
+                            <div class="col-4 d-none d-md-block">
+                                <img src="https://openhouse.bu.ac.th/contents/highlights/4.jpg?1"
+                                    class="img-fluid highlight-img" alt="Expert Speakers" data-bs-toggle="modal"
+                                    data-bs-target="#expertSpeakersModal">
+                            </div>
+                            <div class="col-4 d-none d-md-block">
+                                <img src="https://openhouse.bu.ac.th/contents/highlights/6.jpg?1"
+                                    class="img-fluid highlight-img" alt="Networking Opportunities"
+                                    data-bs-toggle="modal" data-bs-target="#networkingModal">
+                            </div>
+                            <div class="col-12 d-md-none mb-3">
+                                <img src="https://openhouse.bu.ac.th/contents/highlights/5.jpg?1"
+                                    class="img-fluid highlight-img" alt="Tech Workshops" data-bs-toggle="modal"
+                                    data-bs-target="#techWorkshopsModal">
+                            </div>
                         </div>
-                        <div class="col-md-4">
-                            <i class="bi bi-person-circle display-4 text-primary"></i>
-                            <h3 class="my-3">Expert Speakers</h3>
-                            <p>Learn from industry experts sharing insights into emerging trends.</p>
-                        </div>
-                        <div class="col-md-4">
-                            <i class="bi bi-people display-4 text-primary"></i>
-                            <h3 class="my-3">Networking Opportunities</h3>
-                            <p>Meet professionals and peers in the tech community.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-4 d-none d-md-block">
+                                <img src="https://openhouse.bu.ac.th/contents/highlights/2.jpg?1"
+                                    class="img-fluid highlight-img" alt="Tech Innovations" data-bs-toggle="modal"
+                                    data-bs-target="#techInnovationsModal">
+                            </div>
+                            <div class="col-4 d-none d-md-block">
+                                <img src="https://openhouse.bu.ac.th/contents/highlights/3.jpg?1"
+                                    class="img-fluid highlight-img" alt="Collaborative Projects" data-bs-toggle="modal"
+                                    data-bs-target="#collaborativeProjectsModal">
+                            </div>
+                            <div class="col-12 d-md-none mb-3">
+                                <img src="https://openhouse.bu.ac.th/contents/highlights/2.jpg?1"
+                                    class="img-fluid highlight-img" alt="Tech Innovations" data-bs-toggle="modal"
+                                    data-bs-target="#techInnovationsModal">
+                            </div>
                         </div>
                     </div>
                 </div>
-            </section>
-        
-            <!-- Footer -->
-            <footer class="bg-light text-center py-4">
-                <p>&copy; 2024 IT Department Open House. All Rights Reserved.</p>
-            </footer>
-        
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-        </body>
-        </html>
-        n House</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">IT Open House</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Schedule</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section class="hero bg-primary text-white text-center py-5">
-        <div class="container">
-            <h1>Welcome to the IT Department Open House</h1>
-            <p class="lead">Join us for an immersive experience into the world of technology</p>
-            <a href="#" class="btn btn-lg btn-light mt-3">Register Now</a>
-        </div>
-    </section>
-
-    <!-- Highlights Section -->
-    <section class="highlights py-5">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <i class="bi bi-laptop display-4 text-primary"></i>
-                    <h3 class="my-3">Tech Workshops</h3>
-                    <p>Explore hands-on workshops in AI, Web Development, and more.</p>
-                </div>
-                <div class="col-md-4">
-                    <i class="bi bi-person-circle display-4 text-primary"></i>
-                    <h3 class="my-3">Expert Speakers</h3>
-                    <p>Learn from industry experts sharing insights into emerging trends.</p>
-                </div>
-                <div class="col-md-4">
-                    <i class="bi bi-people display-4 text-primary"></i>
-                    <h3 class="my-3">Networking Opportunities</h3>
-                    <p>Meet professionals and peers in the tech community.</p>
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#highlightsCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#highlightsCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
     </section>
+    
 
-    <!-- Footer -->
-    <footer class="bg-light text-center py-4">
-        <p>&copy; 2024 IT Department Open House. All Rights Reserved.</p>
+    <!-- Modals สำหรับแต่ละ highlight -->
+    <div class="modal fade" id="techWorkshopsModal" tabindex="-1" aria-labelledby="techWorkshopsModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="techWorkshopsModalLabel">Tech Workshops</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://openhouse.bu.ac.th/contents/highlights/5.jpg?1" class="img-fluid"
+                        alt="Tech Workshops">
+                    <p>Explore hands-on workshops in AI, Web Development, and more. Our tech workshops offer practical
+                        experience with cutting-edge technologies, guided by industry professionals.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="expertSpeakersModal" tabindex="-1" aria-labelledby="expertSpeakersModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="expertSpeakersModalLabel">Expert Speakers</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://openhouse.bu.ac.th/contents/highlights/4.jpg?1" class="img-fluid"
+                        alt="Expert Speakers">
+                    <p>Learn from industry experts sharing insights into emerging trends. Our lineup of speakers
+                        includes leaders in various tech fields, offering valuable perspectives on the future of
+                        technology.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="networkingModal" tabindex="-1" aria-labelledby="networkingModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="networkingModalLabel">Networking Opportunities</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://openhouse.bu.ac.th/contents/highlights/6.jpg?1" class="rounded float-start"
+                        alt="Networking Opportunities">
+                    <p>Meet professionals and peers in the tech community. Our networking sessions provide a platform to
+                        connect with industry leaders, potential employers, and fellow tech enthusiasts.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="techInnovationsModal" tabindex="-1" aria-labelledby="techInnovationsModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="techInnovationsModalLabel">Tech Innovations</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://openhouse.bu.ac.th/contents/highlights/2.jpg?1" class="img-fluid"
+                        alt="Tech Innovations">
+                    <p>Discover the latest trends and innovations in technology. Our tech innovation showcase features
+                        cutting-edge projects and products from both established companies and promising startups.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="collaborativeProjectsModal" tabindex="-1"
+        aria-labelledby="collaborativeProjectsModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="collaborativeProjectsModalLabel">Collaborative Projects</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://openhouse.bu.ac.th/contents/highlights/3.jpg?1" class="img-fluid"
+                        alt="Collaborative Projects">
+                    <p>Participate in collaborative projects and tech challenges. Our collaborative sessions encourage
+                        teamwork and problem-solving, allowing you to apply your skills to real-world scenarios.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="map-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Location - Bangkok University</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <h4>How to Get Here</h4>
+                    <p>Bangkok University is conveniently located and accessible by multiple modes of transportation:
+                    </p>
+                    <ul>
+                        <li><strong>By Car:</strong> Easily accessible via the main expressways. Parking is available on
+                            campus.</li>
+                        <li><strong>By BTS Skytrain:</strong> Get off at Ekkamai station, and take a taxi to the campus
+                            (approximately 10 minutes).</li>
+                        <li><strong>By Bus:</strong> Several bus routes pass near the university. Bus numbers include
+                            25, 72, and 149.</li>
+                        <li><strong>By Taxi:</strong> Taxi services are readily available and can bring you directly to
+                            the campus.</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6">
+                    <div class="map-responsive">
+                        <iframe title="Bangkok University"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3870.6370458979973!2d100.61278967456342!3d14.039515890568284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2801cc4ec2aff%3A0xbfec6d0816ab0b14!2z4Lih4Lir4Liy4Lin4Li04LiX4Lii4Liy4Lil4Lix4Lii4LiB4Lij4Li44LiH4LmA4LiX4Lie!5e0!3m2!1sth!2sth!4v1726663466569!5m2!1sth!2sth"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-4 text-center bg-light">
+        <div class="container">
+            <p class="mb-0">&copy; 2024 Bangkok University IT Department. All rights reserved.</p>
+        </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

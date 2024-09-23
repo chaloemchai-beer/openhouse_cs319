@@ -1,0 +1,126 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+.navbar {
+    padding: 1rem 1.5rem;
+}
+
+.nav-link {
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #00aaff; /* Change to your desired hover color */
+}
+
+
+.navbar.scrolled {
+    top: 0; /* Keep fixed at the top */
+}
+
+.about-section,
+.faq-section,
+.schedule-section,
+.contact-section,
+.speakers-section {
+    margin: 20px;
+}
+
+.workshop-section {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 40px 0;
+}
+.workshop-section h2 {
+    font-weight: bold;
+    color: #333;
+}
+.card {
+    border: none;
+    transition: transform 0.2s;
+}
+.card:hover {
+    transform: scale(1.05);
+}
+.card-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.card-text {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.carousel{
+    margin-top: -60px;
+}
+
+
+.hero {
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height: 120vh;
+    margin-top: 56px; /* Adjust based on navbar height */
+}
+
+.highlight-box {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.highlight-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.highlight-box img {
+    max-width: 100px;
+    margin-bottom: 15px;
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.highlight-img {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.highlight-img:hover {
+    transform: scale(1.05);
+}
+
+.modal-body {
+    display: flex;
+    gap: 20px;
+}
+
+.modal-body img {
+    max-width: 50%;
+    height: auto;
+    margin-bottom: 15px;
+}
+.map-section{
+    height: 100vh;
+    color: white;
+    background-color: rgb(6, 6, 67);
+}

@@ -1,113 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ - IT Department Open House</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://www.bu.ac.th/dist/images/bu_icon_logo.svg?id=1f26bb9dd84ae768d3955b81b72fb1d9">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+        }
+        .faq-section {
+            padding: 60px 0;
+        }
+        .card {
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .card-header {
+            background-color: #ffffff; /* สีพื้นหลังของหัวข้อ */
+            border-bottom: 1px solid #eaeaea;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 8px 8px 0 0;
+        }
+        .card-header:hover {
+            background-color: #e9ecef; /* เปลี่ยนสีเมื่อเลื่อนเมาส์ */
+        }
+        .card-body {
+            background-color: #ffffff; /* สีพื้นหลังของเนื้อหา */
+            padding: 20px;
+            border-radius: 0 0 8px 8px;
+        }
+        footer {
+            background-color: #ffffff;
+            border-top: 1px solid #eaeaea;
+            padding: 20px 0;
+        }
+    </style>
 </head>
+
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#">IT Open House</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand" href="#">
+                <img src="https://www.bu.ac.th/dist/images/bu_icon_logo.svg?id=1f26bb9dd84ae768d3955b81b72fb1d9" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                IT Open House
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="schedule.html">Schedule</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="faq.html">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="sponsors.html">Sponsors & Partners</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="speakers.html">Speakers & Partners</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- FAQ Section -->
-    <section class="faq-section py-5">
+    <section class="faq-section">
         <div class="container">
             <h1 class="text-center mb-4">Frequently Asked Questions (FAQ)</h1>
-            <div class="accordion" id="faqAccordion">
+            <div class="row">
                 <!-- FAQ Item 1 -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            What is the IT Department Open House?
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            The IT Department Open House is an event where we showcase the latest technologies, offer hands-on workshops, and provide networking opportunities for tech enthusiasts and professionals.
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-header" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <h5 class="mb-0">
+                                งาน BU Open House 2024 จัดขึ้นเมื่อไหร่ และจัดที่ไหน?
+                            </h5>
+                        </div>
+                        <div id="collapseOne" class="collapse" data-bs-parent="#faqAccordion">
+                            <div class="card-body">
+                                มารวมตัวพร้อมกันได้ในวันที่ 29-31 สิงหาคม 2567 ณ มหาวิทยาลัยกรุงเทพ Main campus (รังสิต)
+                            </div>
                         </div>
                     </div>
                 </div>
                 <!-- FAQ Item 2 -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            When and where is the event taking place?
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            The event will be held on [Date] at the Bangkok University campus, IT Department building. For specific details, please refer to the Schedule page.
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-header" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <h5 class="mb-0">
+                                เข้าร่วมงานต้องลงทะเบียนไหม?
+                            </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" data-bs-parent="#faqAccordion">
+                            <div class="card-body">
+                                สามารถลงทะเบียนเพื่อร่วมงาน BU OPEN HOUSE ล่วงหน้าได้ที่เว็บไซต์ หรือลงทะเบียนหน้างานได้ที่ PRO-CENTER บริเวณใต้ตึก A3
+                            </div>
                         </div>
                     </div>
                 </div>
                 <!-- FAQ Item 3 -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            How can I register for the event?
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            You can register for the event by filling out the registration form available on the Registration page. Please make sure to provide accurate information.
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-header" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <h5 class="mb-0">
+                                เลือกลงทะเบียนเข้าร่วมกิจกรรมได้กี่คณะ?
+                            </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" data-bs-parent="#faqAccordion">
+                            <div class="card-body">
+                                ลงทะเบียนครั้งเดียวสําหรับเข้าร่วมงาน BU OPEN HOUSE แล้วสามารถดูตารางกิจกรรมของคณะในคลัสเตอร์ต่าง ๆ ได้ที่หน้าเว็บไซต์หากสนใจกิจกรรมไหนก็สามารถไปสแกน QR Code เข้าร่วมที่หน้ากิจกรรมของแต่ละคณะ/สาขาได้เลย
+                            </div>
                         </div>
                     </div>
                 </div>
                 <!-- FAQ Item 4 -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingFour">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                            Are there any costs associated with attending?
-                        </button>
-                    </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            The event is free to attend. However, some workshops may require pre-registration or a small fee to cover materials.
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-header" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <h5 class="mb-0">
+                                การแต่งกาย ใส่ชุดอะไรไปดี?
+                            </h5>
+                        </div>
+                        <div id="collapseFour" class="collapse" data-bs-parent="#faqAccordion">
+                            <div class="card-body">
+                                มหาวิทยาลัยกรุงเทพเราเปิดรับความหลากหลาย ทุกคนสามารถแต่งกายได้ทั้งเครื่องแบบสถาบันหรือชุดฟรีสไตล์ของตัวเอง แต่ยังสุภาพเหมาะสมกับสถานศึกษาได้เลย
+                            </div>
                         </div>
                     </div>
                 </div>
                 <!-- FAQ Item 5 -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingFive">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                            Who can I contact for more information?
-                        </button>
-                    </h2>
-                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
-                        <div class="accordion-body">
-                            For more information, you can contact us through the Contact page or email us at info@itopenhouse.com.
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-header" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            <h5 class="mb-0">
+                                กิจกรรมคณะต่าง ๆ เริ่มตั้งแต่กี่โมง และสิ้นสุดเมื่อไหร่?
+                            </h5>
+                        </div>
+                        <div id="collapseFive" class="collapse" data-bs-parent="#faqAccordion">
+                            <div class="card-body">
+                                สําหรับกิจกรรมทุกคณะ จะเริ่มตั้งแต่เวลา 9.00-16.30 น. และมีต่อกับกิจกรรมสุดพิเศษช่วงเย็นสําหรับคอนเสิร์ตและโชว์วงดนตรีที่เวทีกลางบริเวณโถงอาคาร C6 หอสมุดสุรัตน์ โอสถานุเคราะห์ ตั้งแต่เวลา 17.00-20.00 น.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- FAQ Item 6 -->
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-header" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            <h5 class="mb-0">
+                                ทุกคณะมีเปิดบ้านทุกวันไหม? และทั้ง 3 วัน มีกิจกรรมเหมือนกันไหม?
+                            </h5>
+                        </div>
+                        <div id="collapseSix" class="collapse" data-bs-parent="#faqAccordion">
+                            <div class="card-body">
+                                ทุกคณะจะมีกิจกรรมเปิดบ้านให้เข้าร่วมทั้ง 3 วัน สามารถเช็กตารางกิจกรรมได้ที่หน้าแรกตามแต่ละคลัสเตอร์ซึ่งบางคณะจะมีกิจกรรมไฮไลต์แต่ละวันไม่เหมือนกันอย่าลืมวางแผนเพื่อไม่ให้พลาดกิจกรรมที่ชอบนะคะ
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -122,5 +176,5 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-</html>
 
+</html>
